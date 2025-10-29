@@ -1,0 +1,26 @@
+.sortable-list {
+  max-width: 600px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin-top: 2em;
+}
+
+.sortable-item {
+  border-radius: 999px;
+  border: black solid 2px;
+  text-align: center;
+  padding: .5em;
+  font-size: 1.5em;
+  font-weight: bold;
+
+  &:focus-visible {
+    outline-offset: 2px;
+    outline-width: 4px;
+  }
+
+  &[aria-pressed="true"] {
+    outline-color: red;
+  }
+}
